@@ -33,6 +33,7 @@ python main.py
 ## Attacker
 
 To simulate this DDOS, I have created a **GO** which opens multiple connections and sends content with a given interval, byte by byte.
+Here is used TCP socket to implement half of HTTP protocol. Another half is a lazy sender of content, so called "slow POST".
 
 ### Dependencies
 
@@ -78,7 +79,7 @@ Here is results I have obtained
 
 **NOTE** : RAM is not increasing much as it grows with time, when all bytes are transferred. 
 
-!(htop on last test)(/screenshots/htop-max.png)
+![htop on last test](/screenshots/htop-max.png)
 
 ## Conclusion
 
